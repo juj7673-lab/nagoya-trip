@@ -133,7 +133,18 @@ tr.total td{font-weight:700;background:var(--gold-soft)}
 table.bt{min-width:0}
 tr.opt td{color:var(--muted)}
 tr.opt td:first-child::after{content:"선택";margin-left:6px;font-size:10.5px;font-weight:700;color:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:0 4px;vertical-align:1px}
-@media (max-width:560px){ table.bt td{display:block} table.bt td.num{position:absolute;right:14px;top:10px;padding:0} table.bt tr{position:relative;padding-right:90px} table.bt td:first-child{padding-right:0} table.bt td[data-label]:nth-child(2)::before{display:none} table.bt td:nth-child(2):empty{display:none} }
+@media (max-width:560px){
+  table.bt tr{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:10px;padding:9px 14px}
+  table.bt td{display:block;width:auto;padding:0}
+  table.bt td:first-child{order:1;flex:1 1 0;min-width:0;font-size:15px;padding-bottom:0}
+  table.bt td.num{order:2;flex:0 0 auto;text-align:right!important;font-size:15px}
+  table.bt td.num::before{display:none}
+  table.bt td.num::after{content:"엔";font-family:var(--body);font-weight:500;font-size:12px;margin-left:2px;color:var(--muted)}
+  table.bt tr.total td.num::after{color:inherit}
+  table.bt td:nth-child(2){order:3;flex:0 0 100%;font-size:12.5px;color:var(--muted);margin-top:2px}
+  table.bt td:nth-child(2)::before{display:none}
+  table.bt td:nth-child(2):empty{display:none}
+}
 /* day */
 .day{margin-top:32px;scroll-margin-top:66px}
 .dayhead{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;border-left:6px solid var(--dc,var(--gold));position:relative;overflow:hidden}
