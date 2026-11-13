@@ -148,16 +148,17 @@ tr.opt td:first-child::after{content:"선택";margin-left:6px;font-size:10.5px;f
 .budget a{color:inherit;text-decoration:none}
 .day.today .dayhead h3::after{content:"TODAY";margin-left:8px;font-family:var(--num);font-size:11px;letter-spacing:.1em;color:var(--on-indigo);background:var(--indigo);border-radius:6px;padding:2px 7px;vertical-align:middle}
 
-.tl{list-style:none;margin:0;padding:14px 0 0 0;position:relative}
-.tl::before{content:"";position:absolute;left:19px;top:14px;bottom:10px;width:2px;background:linear-gradient(var(--dc,var(--line)),var(--line));opacity:.6}
-.tl li{position:relative;display:grid;grid-template-columns:40px 1fr;gap:0 8px;margin-bottom:8px}
-.tl .ico{position:relative;z-index:1;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;background:var(--surface);border:2px solid var(--line);box-shadow:var(--shadow)}
-.tl .card{background:var(--surface);border-radius:12px;box-shadow:var(--shadow);padding:9px 12px 10px;min-width:0;border-left:4px solid var(--line)}
-.tl .time{font-family:var(--num);font-weight:700;font-size:12px;color:var(--muted);letter-spacing:.04em;font-variant-numeric:tabular-nums}
-.tl .what{font-family:var(--display);font-weight:700;font-size:15px;line-height:1.4;margin-top:1px;overflow-wrap:anywhere}
-.tl .note{color:var(--muted);font-size:13px;margin-top:3px;line-height:1.5}
-.tl .acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.go{display:inline-flex;align-items:center;gap:4px;min-height:30px;padding:0 11px;border-radius:999px;font-size:12.5px;font-weight:700;text-decoration:none;color:var(--indigo);background:var(--move-bg);white-space:nowrap}
+.tl{list-style:none;margin:0;padding:10px 0 0 0;position:relative}
+.tl::before{content:"";position:absolute;left:15px;top:10px;bottom:8px;width:2px;background:linear-gradient(var(--dc,var(--line)),var(--line));opacity:.6}
+.tl li{position:relative;display:grid;grid-template-columns:32px 1fr;gap:0 8px;margin-bottom:6px}
+.tl .ico{position:relative;z-index:1;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;background:var(--surface);border:2px solid var(--line);box-shadow:var(--shadow)}
+.tl .card{background:var(--surface);border-radius:10px;box-shadow:var(--shadow);padding:7px 10px 8px;min-width:0;border-left:3px solid var(--line)}
+.tl .head{display:flex;align-items:baseline;gap:8px;min-width:0}
+.tl .time{flex:0 0 auto;font-family:var(--num);font-weight:800;font-size:11.5px;color:var(--muted);letter-spacing:.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tl .what{font-family:var(--display);font-weight:700;font-size:13.5px;line-height:1.35;overflow-wrap:anywhere;min-width:0}
+.tl .note{color:var(--muted);font-size:12px;margin-top:2px;line-height:1.45}
+.tl .acts{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.go{display:inline-flex;align-items:center;gap:4px;min-height:26px;padding:0 10px;border-radius:999px;font-size:11.5px;font-weight:700;text-decoration:none;color:var(--indigo);background:var(--move-bg);white-space:nowrap}
 .go:hover,.go:focus-visible{background:var(--indigo);color:var(--on-indigo);outline:none}
 .tag{display:inline-block;border-radius:6px;padding:1px 7px;font-size:11.5px;font-weight:700;vertical-align:2px;margin-right:4px}
 /* type colors */
@@ -169,7 +170,7 @@ li.stay .ico{border-color:var(--stay);background:var(--stay-bg)} li.stay .card{b
 li.onsen .ico{border-color:var(--onsen);background:var(--onsen)} li.onsen .card{border-left-color:var(--onsen);background:var(--onsen-bg)} li.onsen .time{color:var(--onsen)} li.onsen .note{color:var(--onsen)} .t-onsen{background:var(--onsen-bg);color:var(--onsen)}
 li.onsen .go{background:var(--surface)}
 li.onsen .card{position:relative;overflow:hidden}
-li.onsen .card::after{content:"♨";position:absolute;right:10px;top:-6px;font-size:52px;color:var(--onsen);opacity:.12;pointer-events:none}
+li.onsen .card::after{content:"♨";position:absolute;right:8px;top:-8px;font-size:40px;color:var(--onsen);opacity:.12;pointer-events:none}
 
 .legend{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:12px;font-size:12.5px;color:var(--muted)}
 .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px;background:var(--c)}
@@ -269,56 +270,56 @@ ul.plain li::before{content:"";position:absolute;left:13px;top:11px;width:16px;h
 <section class="day" id="day1" style="--dc:var(--d1)">
   <div class="dayhead"><div><div class="d">DAY 1</div><h3>11/30 (월)</h3><div class="theme">도착 → 사카에 쇼핑 → 야경</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 8,400엔</a></b></div></div>
   <ol class="tl">
-    <li class="move"><div class="ico">✈️</div><div class="card"><div class="time">10:55</div><div class="what">센트레아 T2 도착 → 입국</div><div class="note">T2에서 액세스플라자(T1 쪽 역)까지 도보 10–15분</div></div></li>
-    <li class="move"><div class="ico">🚆</div><div class="card"><div class="time">12:00 · 약 45분</div><div class="what">μ-SKY → 메이테츠 나고야 → 지하철 사카에 → 도보</div><div class="note">890 + μ티켓 450 + 지하철 210엔. 가나야마 환승 메이조선으로 히사야오도리 내려도 OK</div><div class="acts"><a class="go" data-from="中部国際空港駅" data-to="西鉄ホテル クルーム名古屋" data-mode="transit">길찾기 ↗</a></div></div></li>
-    <li class="stay"><div class="ico">🏨</div><div class="card"><div class="time">13:00</div><div class="what">크룸에 짐 맡기기</div><div class="acts"><a class="go" data-place="西鉄ホテル クルーム名古屋">지도 ↗</a></div></div></li>
-    <li class="food"><div class="ico">🍱</div><div class="card"><div class="time">13:15</div><div class="what">점심 · 라무치이 된장돈까스</div><div class="note">숙소 도보 15분, 15:00 마감. 대안: 히츠마부시 하나오카 (웨이팅 등록 필수)</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="らむちぃ 名古屋 錦" data-mode="walking">길찾기 ↗</a></div></div></li>
-    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="time">14:30 – 19:00</div><div class="what">사카에 쇼핑 한 바퀴 (전부 도보)</div><div class="note">HAERA (숙소 바로 옆, 올 6월 개장 럭셔리몰) → 미츠코시·마츠자카야 화장품 면세 (샤넬·맥·디올) → 라시크 → 파르코 (관광안내소에 리플릿 들고 가면 500엔 쿠폰, 하브스 밀크레이프) → 스카일 (유니클로·GU·다이소)</div><div class="acts"><a class="go" data-place="HAERA 名古屋栄">HAERA</a><a class="go" data-place="名古屋三越栄店">미츠코시</a><a class="go" data-place="松坂屋名古屋店">마츠자카야</a><a class="go" data-place="ラシック 名古屋">라시크</a><a class="go" data-place="名古屋PARCO">파르코</a><a class="go" data-place="スカイル 栄">스카일</a></div></div></li>
-    <li class="sight"><div class="ico">🌃</div><div class="card"><div class="time">19:00</div><div class="what">오아시스21 · 미라이타워 야경</div><div class="note">히사야오도리 공원, 숙소 도보 5분</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="オアシス21" data-mode="walking">길찾기 ↗</a></div></div></li>
-    <li class="food"><div class="ico">🍗</div><div class="card"><div class="time">19:30</div><div class="what">저녁 · 세카이노야마짱 초자마치점 (테바사키)</div><div class="note">대안: 츠키시마 몬자 오카케 사카에점 (명란모찌 몬자)</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="世界の山ちゃん 長者町店" data-mode="walking">길찾기 ↗</a></div></div></li>
-    <li class="shop"><div class="ico">🧴</div><div class="card"><div class="time">21:00</div><div class="what">돈키호테 사카에 → 숙소</div><div class="note">카톡에 보낸 돈키 쿠폰 링크 미리 캡처</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="ドン・キホーテ 栄本店" data-mode="walking">길찾기 ↗</a></div></div></li>
-    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">22:00</div><div class="what">크룸 대욕장</div><div class="note">25:00까지</div></div></li>
+    <li class="move"><div class="ico">✈️</div><div class="card"><div class="head"><div class="time">10:55</div><div class="what">센트레아 T2 도착 → 입국</div></div><div class="note">T2에서 액세스플라자(T1 쪽 역)까지 도보 10–15분</div></div></li>
+    <li class="move"><div class="ico">🚆</div><div class="card"><div class="head"><div class="time">12:00</div><div class="what">μ-SKY → 메이테츠 나고야 → 지하철 사카에 → 도보</div></div><div class="note">890 + μ티켓 450 + 지하철 210엔. 가나야마 환승 메이조선으로 히사야오도리 내려도 OK</div><div class="acts"><a class="go" data-from="中部国際空港駅" data-to="西鉄ホテル クルーム名古屋" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="stay"><div class="ico">🏨</div><div class="card"><div class="head"><div class="time">13:00</div><div class="what">크룸에 짐 맡기기</div></div><div class="acts"><a class="go" data-place="西鉄ホテル クルーム名古屋">지도 ↗</a></div></div></li>
+    <li class="food"><div class="ico">🍱</div><div class="card"><div class="head"><div class="time">13:15</div><div class="what">점심 · 라무치이 된장돈까스</div></div><div class="note">숙소 도보 15분, 15:00 마감. 대안: 히츠마부시 하나오카 (웨이팅 등록 필수)</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="らむちぃ 名古屋 錦" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="head"><div class="time">14:30</div><div class="what">사카에 쇼핑 한 바퀴 (전부 도보)</div></div><div class="note">HAERA (숙소 바로 옆, 올 6월 개장 럭셔리몰) → 미츠코시·마츠자카야 화장품 면세 (샤넬·맥·디올) → 라시크 → 파르코 (관광안내소에 리플릿 들고 가면 500엔 쿠폰, 하브스 밀크레이프) → 스카일 (유니클로·GU·다이소)</div><div class="acts"><a class="go" data-place="HAERA 名古屋栄">HAERA</a><a class="go" data-place="名古屋三越栄店">미츠코시</a><a class="go" data-place="松坂屋名古屋店">마츠자카야</a><a class="go" data-place="ラシック 名古屋">라시크</a><a class="go" data-place="名古屋PARCO">파르코</a><a class="go" data-place="スカイル 栄">스카일</a></div></div></li>
+    <li class="sight"><div class="ico">🌃</div><div class="card"><div class="head"><div class="time">19:00</div><div class="what">오아시스21 · 미라이타워 야경</div></div><div class="note">히사야오도리 공원, 숙소 도보 5분</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="オアシス21" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="food"><div class="ico">🍗</div><div class="card"><div class="head"><div class="time">19:30</div><div class="what">저녁 · 세카이노야마짱 초자마치점 (테바사키)</div></div><div class="note">대안: 츠키시마 몬자 오카케 사카에점 (명란모찌 몬자)</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="世界の山ちゃん 長者町店" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="shop"><div class="ico">🧴</div><div class="card"><div class="head"><div class="time">21:00</div><div class="what">돈키호테 사카에 → 숙소</div></div><div class="note">카톡에 보낸 돈키 쿠폰 링크 미리 캡처</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="ドン・キホーテ 栄本店" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="head"><div class="time">22:00</div><div class="what">크룸 대욕장</div></div><div class="note">25:00까지</div></div></li>
   </ol>
 </section>
 
 <section class="day" id="day2" style="--dc:var(--d2)">
   <div class="dayhead"><div><div class="d">DAY 2</div><h3>12/1 (화)</h3><div class="theme">픽업 → 나고야역 → 오스 빈티지 → 야키니쿠</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 11,000엔</a></b></div></div>
   <ol class="tl">
-    <li class="food"><div class="ico">🍞</div><div class="card"><div class="time">08:30</div><div class="what">아침 · 킷사 나나반 모닝세트</div><div class="note">11시 전 필수. 픽업 시간 맞추려면 9:40엔 나와야 함. 대안: 킷사 마츠바 오구라토스트</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="킷사 나나반 나고야" data-mode="walking">길찾기 ↗</a></div></div></li>
-    <li class="stay"><div class="ico">📦</div><div class="card"><div class="time">10:00</div><div class="what">스시자로 픽업</div><div class="note">숙소 도보 5분. 정확한 가게 이름 알려주면 길찾기 링크 추가</div></div></li>
-    <li class="sight"><div class="ico">🏯</div><div class="card"><div class="time">10:45</div><div class="what">나고야성 · 메이조공원 (선택)</div><div class="note">메이조선 2정거장, 09:00–16:30, 500엔. 기념품점에 테바사키맛 자가비. 쇼핑 시간 모자라면 생략하고 바로 나고야역으로</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="名古屋城" data-mode="transit">길찾기 ↗</a></div></div></li>
-    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="time">13:00</div><div class="what">나고야역 쇼핑 + 점심</div><div class="note">JR 타카시마야 · 게이트타워몰 (젤라또 피케, 화장품) · 미들랜드스퀘어 · 빅카메라. 점심은 텐무스·키시멘 (케시키) 또는 이푸도도 탄탄멘</div><div class="acts"><a class="go" data-from="名古屋城" data-to="JR名古屋タカシマヤ" data-mode="transit">길찾기 ↗</a></div></div></li>
-    <li class="shop"><div class="ico">📷</div><div class="card"><div class="time">15:30</div><div class="what">오스 상점가 · 빈티지</div><div class="note">츠루마이선 오스칸논/가미마에즈. 코메효 본점 (빈티지 디카·아이폰·중고명품, 10:30–19:00) · 스투시 나고야 챕터 · 2nd STREET · 빈티지숍 · 길거리 간식</div><div class="acts"><a class="go" data-from="名古屋駅" data-to="コメ兵 名古屋本店" data-mode="transit">길찾기 ↗</a><a class="go" data-place="Stussy Nagoya Chapter">스투시</a></div></div></li>
-    <li class="food"><div class="ico">🥩</div><div class="card"><div class="time">18:30</div><div class="what">저녁 · 신라칸 야키니쿠 (우설)</div><div class="note">대안: 노라덴 미소오뎅 (구글 웨이팅 필수) · 마에사와 규샤 후시미야</div><div class="acts"><a class="go" data-from="大須観音駅" data-to="新羅館 名古屋" data-mode="transit">길찾기 ↗</a></div></div></li>
-    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">21:00</div><div class="what">크룸 대욕장</div><div class="acts"><a class="go" data-from="新羅館 名古屋" data-to="西鉄ホテル クルーム名古屋" data-mode="transit">숙소로 ↗</a></div></div></li>
+    <li class="food"><div class="ico">🍞</div><div class="card"><div class="head"><div class="time">08:30</div><div class="what">아침 · 킷사 나나반 모닝세트</div></div><div class="note">11시 전 필수. 픽업 시간 맞추려면 9:40엔 나와야 함. 대안: 킷사 마츠바 오구라토스트</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="킷사 나나반 나고야" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="stay"><div class="ico">📦</div><div class="card"><div class="head"><div class="time">10:00</div><div class="what">스시자로 픽업</div></div><div class="note">숙소 도보 5분. 정확한 가게 이름 알려주면 길찾기 링크 추가</div></div></li>
+    <li class="sight"><div class="ico">🏯</div><div class="card"><div class="head"><div class="time">10:45</div><div class="what">나고야성 · 메이조공원 (선택)</div></div><div class="note">메이조선 2정거장, 09:00–16:30, 500엔. 기념품점에 테바사키맛 자가비. 쇼핑 시간 모자라면 생략하고 바로 나고야역으로</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="名古屋城" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="head"><div class="time">13:00</div><div class="what">나고야역 쇼핑 + 점심</div></div><div class="note">JR 타카시마야 · 게이트타워몰 (젤라또 피케, 화장품) · 미들랜드스퀘어 · 빅카메라. 점심은 텐무스·키시멘 (케시키) 또는 이푸도도 탄탄멘</div><div class="acts"><a class="go" data-from="名古屋城" data-to="JR名古屋タカシマヤ" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="shop"><div class="ico">📷</div><div class="card"><div class="head"><div class="time">15:30</div><div class="what">오스 상점가 · 빈티지</div></div><div class="note">츠루마이선 오스칸논/가미마에즈. 코메효 본점 (빈티지 디카·아이폰·중고명품, 10:30–19:00) · 스투시 나고야 챕터 · 2nd STREET · 빈티지숍 · 길거리 간식</div><div class="acts"><a class="go" data-from="名古屋駅" data-to="コメ兵 名古屋本店" data-mode="transit">길찾기 ↗</a><a class="go" data-place="Stussy Nagoya Chapter">스투시</a></div></div></li>
+    <li class="food"><div class="ico">🥩</div><div class="card"><div class="head"><div class="time">18:30</div><div class="what">저녁 · 신라칸 야키니쿠 (우설)</div></div><div class="note">대안: 노라덴 미소오뎅 (구글 웨이팅 필수) · 마에사와 규샤 후시미야</div><div class="acts"><a class="go" data-from="大須観音駅" data-to="新羅館 名古屋" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="head"><div class="time">21:00</div><div class="what">크룸 대욕장</div></div><div class="acts"><a class="go" data-from="新羅館 名古屋" data-to="西鉄ホテル クルーム名古屋" data-mode="transit">숙소로 ↗</a></div></div></li>
   </ol>
 </section>
 
 <section class="day" id="day3" style="--dc:var(--d3)">
   <div class="dayhead"><div><div class="d">DAY 3</div><h3>12/2 (수)</h3><div class="theme">히츠마부시 → 이누야마 → 온천 두 번</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 13,400엔</a></b></div></div>
   <ol class="tl">
-    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">06:30</div><div class="what">크룸 아침 대욕장 → 조식</div><div class="note">09:30까지</div></div></li>
-    <li class="stay"><div class="ico">🧳</div><div class="card"><div class="time">10:30</div><div class="what">체크아웃, 짐 맡기고 마츠자카야로</div></div></li>
-    <li class="food"><div class="ico">🍚</div><div class="card"><div class="time">11:00</div><div class="what">점심 · 아츠타 호라이켄 마츠자카야점 (히츠마부시 원조)</div><div class="note">오픈 전 줄서기. 수요일 영업, 11:00–14:30. 1인 약 4,000–5,000엔</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="あつた蓬莱軒 松坂屋店" data-mode="walking">길찾기 ↗</a></div></div></li>
-    <li class="move"><div class="ico">🚆</div><div class="card"><div class="time">13:00 · 약 40분</div><div class="what">메이테츠 나고야 → 이누야마유엔 → 도보 8분</div><div class="note">특급 일반차 약 700엔, 추가요금 없음</div><div class="acts"><a class="go" data-from="名鉄名古屋駅" data-to="ホテルインディゴ犬山有楽苑" data-mode="transit">길찾기 ↗</a></div></div></li>
-    <li class="stay"><div class="ico">🏨</div><div class="card"><div class="time">13:45</div><div class="what">인디고에 짐 맡기기</div><div class="acts"><a class="go" data-place="ホテルインディゴ犬山有楽苑">지도 ↗</a></div></div></li>
-    <li class="sight"><div class="ico">🏯</div><div class="card"><div class="time">14:00</div><div class="what">이누야마성 → 성하마을 쇼와요코초</div><div class="note">성 입장 16:30까지, 1,000엔. 성하마을 상점은 17–18시면 닫히니 간식·기념품은 이때</div><div class="acts"><a class="go" data-from="ホテルインディゴ犬山有楽苑" data-to="犬山城" data-mode="walking">길찾기 ↗</a><a class="go" data-place="犬山城下町 昭和横丁">쇼와요코초</a></div></div></li>
-    <li class="stay"><div class="ico">🔑</div><div class="card"><div class="time">16:30</div><div class="what">체크인</div></div></li>
-    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">17:00</div><div class="what">하쿠테이노유 1회차</div></div></li>
-    <li class="food"><div class="ico">🍶</div><div class="card"><div class="time">18:30</div><div class="what">저녁 · 호텔 레스토랑 또는 이누야마역 근처 이자카야</div><div class="note">성하마을은 저녁에 거의 닫힘</div><div class="acts"><a class="go" data-place="犬山駅 居酒屋">이누야마역 주변</a></div></div></li>
-    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">21:30</div><div class="what">하쿠테이노유 2회차</div><div class="note">23:00까지</div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="head"><div class="time">06:30</div><div class="what">크룸 아침 대욕장 → 조식</div></div><div class="note">09:30까지</div></div></li>
+    <li class="stay"><div class="ico">🧳</div><div class="card"><div class="head"><div class="time">10:30</div><div class="what">체크아웃, 짐 맡기고 마츠자카야로</div></div></div></li>
+    <li class="food"><div class="ico">🍚</div><div class="card"><div class="head"><div class="time">11:00</div><div class="what">점심 · 아츠타 호라이켄 마츠자카야점 (히츠마부시 원조)</div></div><div class="note">오픈 전 줄서기. 수요일 영업, 11:00–14:30. 1인 약 4,000–5,000엔</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="あつた蓬莱軒 松坂屋店" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="move"><div class="ico">🚆</div><div class="card"><div class="head"><div class="time">13:00</div><div class="what">메이테츠 나고야 → 이누야마유엔 → 도보 8분</div></div><div class="note">특급 일반차 약 700엔, 추가요금 없음</div><div class="acts"><a class="go" data-from="名鉄名古屋駅" data-to="ホテルインディゴ犬山有楽苑" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="stay"><div class="ico">🏨</div><div class="card"><div class="head"><div class="time">13:45</div><div class="what">인디고에 짐 맡기기</div></div><div class="acts"><a class="go" data-place="ホテルインディゴ犬山有楽苑">지도 ↗</a></div></div></li>
+    <li class="sight"><div class="ico">🏯</div><div class="card"><div class="head"><div class="time">14:00</div><div class="what">이누야마성 → 성하마을 쇼와요코초</div></div><div class="note">성 입장 16:30까지, 1,000엔. 성하마을 상점은 17–18시면 닫히니 간식·기념품은 이때</div><div class="acts"><a class="go" data-from="ホテルインディゴ犬山有楽苑" data-to="犬山城" data-mode="walking">길찾기 ↗</a><a class="go" data-place="犬山城下町 昭和横丁">쇼와요코초</a></div></div></li>
+    <li class="stay"><div class="ico">🔑</div><div class="card"><div class="head"><div class="time">16:30</div><div class="what">체크인</div></div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="head"><div class="time">17:00</div><div class="what">하쿠테이노유 1회차</div></div></div></li>
+    <li class="food"><div class="ico">🍶</div><div class="card"><div class="head"><div class="time">18:30</div><div class="what">저녁 · 호텔 레스토랑 또는 이누야마역 근처 이자카야</div></div><div class="note">성하마을은 저녁에 거의 닫힘</div><div class="acts"><a class="go" data-place="犬山駅 居酒屋">이누야마역 주변</a></div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="head"><div class="time">21:30</div><div class="what">하쿠테이노유 2회차</div></div><div class="note">23:00까지</div></div></li>
   </ol>
 </section>
 
 <section class="day" id="day4" style="--dc:var(--d4)">
   <div class="dayhead"><div><div class="d">DAY 4</div><h3>12/3 (목)</h3><div class="theme">아침 온천 → 우라쿠엔 → 마지막 쇼핑 → 귀국</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 8,200엔</a></b></div></div>
   <ol class="tl">
-    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">06:30</div><div class="what">하쿠테이노유 → 조식</div><div class="note">11:00까지</div></div></li>
-    <li class="sight"><div class="ico">🍵</div><div class="card"><div class="time">09:30</div><div class="what">우라쿠엔 산책 (국보 다실 조안)</div><div class="note">목요일 영업, 09:30–17:00</div><div class="acts"><a class="go" data-from="ホテルインディゴ犬山有楽苑" data-to="有楽苑" data-mode="walking">길찾기 ↗</a></div></div></li>
-    <li class="stay"><div class="ico">🧳</div><div class="card"><div class="time">11:00</div><div class="what">체크아웃</div></div></li>
-    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="time">11:20</div><div class="what">A안 · 나고야역에서 마지막 쇼핑</div><div class="note">이누야마유엔 → 메이테츠 나고야 (12:00) 코인로커 → 나고야역 쇼핑·점심. B안 (여유): 성하마을 점심 → 14:50 이누야마역에서 μ-SKY 직통 → 15:50 공항</div><div class="acts"><a class="go" data-from="犬山遊園駅" data-to="名鉄名古屋駅" data-mode="transit">A안 길찾기 ↗</a><a class="go" data-from="犬山駅" data-to="中部国際空港駅" data-mode="transit">B안 길찾기 ↗</a></div></div></li>
-    <li class="move"><div class="ico">🚆</div><div class="card"><div class="time">15:30 · 28분</div><div class="what">메이테츠 나고야 → μ-SKY → 센트레아</div><div class="note">890 + 450엔. 진에어는 T1 출발이라 역에서 바로 연결. 국제선이라 출발 2시간 전 도착</div><div class="acts"><a class="go" data-from="名鉄名古屋駅" data-to="中部国際空港駅" data-mode="transit">길찾기 ↗</a></div></div></li>
-    <li class="move"><div class="ico">✈️</div><div class="card"><div class="time">18:30</div><div class="what">진에어 LJ294 출발 → 20:55 인천 T2</div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="head"><div class="time">06:30</div><div class="what">하쿠테이노유 → 조식</div></div><div class="note">11:00까지</div></div></li>
+    <li class="sight"><div class="ico">🍵</div><div class="card"><div class="head"><div class="time">09:30</div><div class="what">우라쿠엔 산책 (국보 다실 조안)</div></div><div class="note">목요일 영업, 09:30–17:00</div><div class="acts"><a class="go" data-from="ホテルインディゴ犬山有楽苑" data-to="有楽苑" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="stay"><div class="ico">🧳</div><div class="card"><div class="head"><div class="time">11:00</div><div class="what">체크아웃</div></div></div></li>
+    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="head"><div class="time">11:20</div><div class="what">A안 · 나고야역에서 마지막 쇼핑</div></div><div class="note">이누야마유엔 → 메이테츠 나고야 (12:00) 코인로커 → 나고야역 쇼핑·점심. B안 (여유): 성하마을 점심 → 14:50 이누야마역에서 μ-SKY 직통 → 15:50 공항</div><div class="acts"><a class="go" data-from="犬山遊園駅" data-to="名鉄名古屋駅" data-mode="transit">A안 길찾기 ↗</a><a class="go" data-from="犬山駅" data-to="中部国際空港駅" data-mode="transit">B안 길찾기 ↗</a></div></div></li>
+    <li class="move"><div class="ico">🚆</div><div class="card"><div class="head"><div class="time">15:30</div><div class="what">메이테츠 나고야 → μ-SKY → 센트레아</div></div><div class="note">890 + 450엔. 진에어는 T1 출발이라 역에서 바로 연결. 국제선이라 출발 2시간 전 도착</div><div class="acts"><a class="go" data-from="名鉄名古屋駅" data-to="中部国際空港駅" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="move"><div class="ico">✈️</div><div class="card"><div class="head"><div class="time">18:30</div><div class="what">진에어 LJ294 출발 → 20:55 인천 T2</div></div></div></li>
   </ol>
 </section>
 
