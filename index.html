@@ -207,6 +207,30 @@ ul.plain li::before{content:"";position:absolute;left:13px;top:11px;width:16px;h
   .hotel .top{padding:12px 14px}.hotel .body{padding:12px 14px 14px}
 }
 @media (prefers-reduced-motion:no-preference){.go{transition:background .15s,color .15s}}
+/* compact timeline on phones (~60% of desktop card size) */
+@media (max-width:560px){
+  .tl{padding-top:8px}
+  .tl::before{left:12px;top:8px}
+  .tl li{grid-template-columns:26px 1fr;gap:0 6px;margin-bottom:4px}
+  .tl .ico{width:26px;height:26px;font-size:12px;border-width:1.5px;box-shadow:none}
+  .tl .card{padding:5px 8px 6px;border-radius:8px;border-left-width:3px}
+  .tl .head{gap:6px}
+  .tl .time{font-size:10.5px}
+  .tl .what{font-size:12.5px;line-height:1.3}
+  .tl .note{font-size:11px;line-height:1.4;margin-top:1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .tl li.open .note{display:block;-webkit-line-clamp:unset}
+  .tl .acts{gap:4px;margin-top:4px}
+  .tl .go{min-height:22px;padding:0 8px;font-size:10.5px}
+  li.onsen .card::after{font-size:28px;top:-6px;right:6px}
+  .dayhead{padding:9px 12px;border-left-width:5px}
+  .dayhead .d{font-size:10.5px}
+  .dayhead h3{font-size:16px}
+  .dayhead .theme{font-size:11px}
+  .budget span{font-size:10px}
+  .budget b{font-size:13px}
+  .legend{font-size:11px}
+}
+
 </style>
 </head>
 <body>
@@ -231,7 +255,7 @@ ul.plain li::before{content:"";position:absolute;left:13px;top:11px;width:16px;h
 <div class="gutter"><div class="wrap">
 
 <div class="overview">
-  <a class="ov" href="#day1" style="--dc:var(--d1)"><b>11/30 월</b><span>도착 · 사카에 쇼핑 · 야경</span><em class="o">♨ 크룸 저녁</em></a>
+  <a class="ov" href="#day1" style="--dc:var(--d1)"><b>11/30 월</b><span>06:50 인천 집합 · 사카에 쇼핑</span><em class="o">♨ 크룸 저녁</em></a>
   <a class="ov" href="#day2" style="--dc:var(--d2)"><b>12/1 화</b><span>픽업 · 나고야역 · 오스</span><em class="o">♨ 크룸 저녁</em></a>
   <a class="ov" href="#day3" style="--dc:var(--d3)"><b>12/2 수</b><span>히츠마부시 · 이누야마</span><em class="o">♨ 아침 + 저녁</em></a>
   <a class="ov" href="#day4" style="--dc:var(--d4)"><b>12/3 목</b><span>우라쿠엔 · 쇼핑 · 귀국</span><em class="o">♨ 인디고 아침</em></a>
@@ -279,8 +303,12 @@ ul.plain li::before{content:"";position:absolute;left:13px;top:11px;width:16px;h
 </div>
 
 <section class="day" id="day1" style="--dc:var(--d1)">
-  <div class="dayhead"><div><div class="d">DAY 1</div><h3>11/30 (월)</h3><div class="theme">도착 → 사카에 쇼핑 → 야경</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 8,400엔</a></b></div></div>
+  <div class="dayhead"><div><div class="d">DAY 1</div><h3>11/30 (월)</h3><div class="theme">인천 06:50 집합 → 도착 → 사카에 쇼핑 → 야경</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 8,400엔</a></b></div></div>
   <ol class="tl">
+    <li class="stay"><div class="ico">🤝</div><div class="card"><div class="head"><div class="time">06:50</div><div class="what">인천공항 T1 3층 출국장에서 만나기</div></div><div class="note">제주항공 카운터 앞 (카운터 번호는 출국장 전광판에서 확인). 출발 2시간 20분 전</div><div class="acts"><a class="go" data-place="인천국제공항 제1여객터미널 3층 출국장">지도 ↗</a></div></div></li>
+    <li class="move"><div class="ico">🎫</div><div class="card"><div class="head"><div class="time">07:00</div><div class="what">체크인 · 수하물 위탁</div></div><div class="note">제주항공 국제선 카운터는 출발 50분 전(08:20) 마감. 셀프 체크인 기기 쓰면 줄 짧음</div></div></li>
+    <li class="move"><div class="ico">🛂</div><div class="card"><div class="head"><div class="time">07:30</div><div class="what">보안검색 · 출국심사 → 면세점 · 아침</div></div><div class="note">월요일 아침이라 보안검색 20–40분 예상. 커피·샌드위치는 들어가서</div></div></li>
+    <li class="move"><div class="ico">🛫</div><div class="card"><div class="head"><div class="time">08:30</div><div class="what">탑승구 도착 → 08:40 탑승 → 09:10 출발</div></div><div class="note">제주항공 7C1201 · 비행 1시간 45분 · 일본은 한국과 시차 없음</div></div></li>
     <li class="move"><div class="ico">✈️</div><div class="card"><div class="head"><div class="time">10:55</div><div class="what">센트레아 T2 도착 → 입국</div></div><div class="note">T2에서 액세스플라자(T1 쪽 역)까지 도보 10–15분</div></div></li>
     <li class="move"><div class="ico">🚆</div><div class="card"><div class="head"><div class="time">12:00</div><div class="what">μ-SKY → 메이테츠 나고야 → 지하철 사카에 → 도보</div></div><div class="note">890 + μ티켓 450 + 지하철 210엔. 가나야마 환승 메이조선으로 히사야오도리 내려도 OK</div><div class="acts"><a class="go" data-from="中部国際空港駅" data-to="西鉄ホテル クルーム名古屋" data-mode="transit">길찾기 ↗</a></div></div></li>
     <li class="stay"><div class="ico">🏨</div><div class="card"><div class="head"><div class="time">13:00</div><div class="what">크룸에 짐 맡기기</div></div><div class="acts"><a class="go" data-place="西鉄ホテル クルーム名古屋">지도 ↗</a></div></div></li>
@@ -502,6 +530,8 @@ ul.plain li::before{content:"";position:absolute;left:13px;top:11px;width:16px;h
   window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(update); } },{passive:true});
   items.forEach(function(x){ x.a.addEventListener('click',function(e){ e.preventDefault(); setOn(x.a); jump(x.el); }); });
   document.querySelectorAll('.ov').forEach(function(a){ a.addEventListener('click',function(e){ var el=document.getElementById(a.getAttribute('href').slice(1)); if(el){ e.preventDefault(); jump(el); var m=items.filter(function(x){return x.el===el;})[0]; setOn(m?m.a:null); } }); });
+  // tap a card to expand a clipped note (phones clamp notes to 2 lines)
+  document.querySelectorAll('.tl li').forEach(function(li){ li.addEventListener('click',function(e){ if(e.target.closest('a')) return; li.classList.toggle('open'); }); });
   // today marker (during the trip, open on today's section)
   var days={'2026-11-30':'day1','2026-12-01':'day2','2026-12-02':'day3','2026-12-03':'day4'};
   var d=new Date(), key=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
