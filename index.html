@@ -33,6 +33,7 @@
   --onsen:#6fd6ca; --onsen-bg:#12332f; --food:#f3a27c; --food-bg:#3c2419; --shop:#d3a8e8; --shop-bg:#30203c;
   --move:#b4c0dc; --move-bg:#222c47; --sight:#9bd08a; --sight-bg:#1e3119; --stay:#8cc6f0; --stay-bg:#15304a; --d1:#e5b85a; --d2:#d3a8e8; --d3:#6fd6ca; --d4:#f3a27c;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 20px -8px rgba(0,0,0,.6); color-scheme:dark}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 *{box-sizing:border-box}
 
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55;letter-spacing:-.005em;padding-block:0 72px}
@@ -167,7 +168,7 @@ tr.opt td:first-child::after{content:"선택";margin-left:6px;font-size:10.5px;f
 .tl .head{display:flex;align-items:baseline;gap:8px;min-width:0}
 .tl .time{flex:0 0 auto;font-family:var(--num);font-weight:800;font-size:11.5px;color:var(--muted);letter-spacing:.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tl .what{font-family:var(--display);font-weight:800;font-size:15px;line-height:1.35;overflow-wrap:anywhere;min-width:0}
-.tl .note{color:var(--muted);font-size:11.5px;margin-top:2px;line-height:1.45}
+.tl .note{color:var(--muted);font-size:12.5px;margin-top:2px;line-height:1.45}
 .tl .acts{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
 .go{display:inline-flex;align-items:center;gap:4px;min-height:26px;padding:0 10px;border-radius:999px;font-size:11.5px;font-weight:700;text-decoration:none;color:var(--indigo);background:var(--move-bg);white-space:nowrap}
 .go:hover,.go:focus-visible{background:var(--indigo);color:var(--on-indigo);outline:none}
@@ -217,7 +218,7 @@ ul.plain li::before{content:"";position:absolute;left:13px;top:11px;width:16px;h
   .tl .head{gap:6px}
   .tl .time{font-size:10.5px;align-self:center}
   .tl .what{font-size:14px;line-height:1.3;font-weight:800}
-  .tl .note{font-size:10.5px;line-height:1.4;margin-top:1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .tl .note{font-size:11.5px;line-height:1.4;margin-top:1px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .tl li.open .note{display:block;-webkit-line-clamp:unset}
   .tl .acts{gap:4px;margin-top:4px}
   .tl .go{min-height:22px;padding:0 8px;font-size:10.5px}
