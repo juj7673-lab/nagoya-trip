@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="나고야·이누야마 3박 4일">
+<meta property="og:description" content="2026.11.30–12.3 여행 일정표 · 온천 시간 · 길찾기 · 경비">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>나고야·이누야마 3박 4일</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Hahmlet:wght@600;700;800&family=Manrope:wght@600;700;800&display=swap">
+<style>
+/* Layout: full-width indigo hero band, then one phone-first column. Each day is a stack of typed cards (icon + time + title) joined by a thin rail. */
+:root{
+  --bg:#eef1f6; --surface:#ffffff; --fg:#121a2e; --muted:#5d6881; --line:#d9dfea;
+  --indigo:#22356b; --indigo-deep:#121d45; --on-indigo:#ffffff; --gold:#c9962e; --gold-soft:#f5e6c4;
+  --onsen:#117a73; --onsen-bg:#dcf2ee; --food:#bf4f25; --food-bg:#fde7dc; --shop:#7a3c93; --shop-bg:#f1e5f8;
+  --move:#46557a; --move-bg:#e5eaf4; --sight:#3f7a35; --sight-bg:#e3f1dc; --stay:#1f5f8a; --stay-bg:#ddeef9;
+  --d1:#c9962e; --d2:#7a3c93; --d3:#117a73; --d4:#bf4f25;
+  --display:"Hahmlet","Apple SD Gothic Neo","Noto Serif KR",serif; --body:"Gowun Dodum","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif; --num:"Manrope","Gowun Dodum",system-ui,sans-serif;
+  --shadow:0 1px 2px rgba(18,26,46,.06),0 6px 18px -8px rgba(18,26,46,.14);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c1222; --surface:#161e35; --fg:#e9edf6; --muted:#9ba7c2; --line:#2a3553;
+  --indigo:#8fa9ec; --indigo-deep:#0b1330; --on-indigo:#ffffff; --gold:#e5b85a; --gold-soft:#3a2f14;
+  --onsen:#6fd6ca; --onsen-bg:#12332f; --food:#f3a27c; --food-bg:#3c2419; --shop:#d3a8e8; --shop-bg:#30203c;
+  --move:#b4c0dc; --move-bg:#222c47; --sight:#9bd08a; --sight-bg:#1e3119; --stay:#8cc6f0; --stay-bg:#15304a; --d1:#e5b85a; --d2:#d3a8e8; --d3:#6fd6ca; --d4:#f3a27c;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 20px -8px rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1222; --surface:#161e35; --fg:#e9edf6; --muted:#9ba7c2; --line:#2a3553;
+  --indigo:#8fa9ec; --indigo-deep:#0b1330; --on-indigo:#ffffff; --gold:#e5b85a; --gold-soft:#3a2f14;
+  --onsen:#6fd6ca; --onsen-bg:#12332f; --food:#f3a27c; --food-bg:#3c2419; --shop:#d3a8e8; --shop-bg:#30203c;
+  --move:#b4c0dc; --move-bg:#222c47; --sight:#9bd08a; --sight-bg:#1e3119; --stay:#8cc6f0; --stay-bg:#15304a; --d1:#e5b85a; --d2:#d3a8e8; --d3:#6fd6ca; --d4:#f3a27c;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 20px -8px rgba(0,0,0,.6); color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16.5px;line-height:1.6;letter-spacing:-.005em;padding-block:0 72px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--indigo-deep)}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:720px;margin:0 auto}
+a{color:var(--indigo)}
+p{margin:0 0 10px}
+
+/* hero */
+.hero{background:linear-gradient(160deg,#1e3070 0%,#131f4d 55%,#0d1636 100%);color:#fff;padding-block:40px 34px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.13;pointer-events:none;background-color:transparent;
+  background-image:radial-gradient(circle at 50% 100%, transparent 29%, #fff 30%, #fff 33%, transparent 34%, transparent 43%, #fff 44%, #fff 47%, transparent 48%, transparent 57%, #fff 58%, #fff 61%, transparent 62%),
+  radial-gradient(circle at 50% 100%, transparent 29%, #fff 30%, #fff 33%, transparent 34%, transparent 43%, #fff 44%, #fff 47%, transparent 48%, transparent 57%, #fff 58%, #fff 61%, transparent 62%);
+  background-size:60px 30px;background-position:0 0,30px 15px;
+  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,0));mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,0))}
+.hero>.gutter{position:relative;z-index:1}
+.hero::after{content:"";position:absolute;right:-60px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(201,150,46,.35),rgba(201,150,46,0) 70%);pointer-events:none}
+.hero .eyebrow{font-family:var(--num);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#e5b85a;font-weight:800;display:inline-flex;align-items:center;gap:8px}
+.hero .eyebrow::before{content:"";width:22px;height:2px;background:#e5b85a}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,8vw,46px);line-height:1.12;margin:10px 0 10px;letter-spacing:-.01em;text-wrap:balance}
+.hero .lede{color:rgba(255,255,255,.8);font-size:15px;max-width:48ch;margin-bottom:18px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.fact{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:11px 13px;min-width:0;backdrop-filter:blur(4px)}
+.fact .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#e5b85a;font-weight:700;font-family:var(--num)}
+.fact .v{font-weight:700;font-size:15px;margin-top:2px;line-height:1.35}
+.fact .v small{display:block;font-weight:400;color:rgba(255,255,255,.72);font-size:12.5px}
+
+/* day overview strip */
+.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:-18px;position:relative;z-index:1}
+.ov{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px 12px 10px;text-decoration:none;color:var(--fg);border-top:4px solid var(--dc,var(--indigo));min-width:0}
+.ov b{color:var(--dc,var(--indigo))}
+.ov b{font-family:var(--num);font-size:17px;display:block}
+.ov span{display:block;font-size:12px;color:var(--muted);line-height:1.35;margin-top:3px}
+.ov .o{display:inline-block;margin-top:6px;font-size:11px;font-weight:700;color:var(--onsen);background:var(--onsen-bg);border-radius:6px;padding:1px 6px}
+@media (max-width:480px){.overview{grid-template-columns:repeat(2,1fr)}}
+
+/* sticky nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;transform:translateZ(0);display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-block:10px;margin-top:18px;background:var(--bg);-webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--fg);font-size:14px;font-weight:700;text-decoration:none;font-family:var(--num)}
+.nav a.on{background:var(--indigo);color:var(--on-indigo);border-color:var(--indigo)}
+
+h2{font-family:var(--display);font-size:23px;font-weight:800;margin:40px 0 14px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+h2::before{content:"";width:8px;height:22px;border-radius:3px;background:var(--gold)}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* hotel cards */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.hotel{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;min-width:0}
+.hotel .top{background:var(--indigo-deep);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.hotel .top h3{margin:0;font-size:16px;font-weight:700;font-family:var(--display)}
+.hotel .top .n{font-family:var(--num);font-size:12px;color:#e5b85a;font-weight:700;letter-spacing:.06em}
+.hotel .body{padding:12px 16px 16px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;font-size:14px;margin:0}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+.bath{margin-top:12px;border-radius:12px;background:var(--onsen-bg);color:var(--onsen);padding:12px 14px}
+.bath .t{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-family:var(--num)}
+.bath .h{font-family:var(--num);font-weight:700;font-size:20px;line-height:1.2;margin-top:2px;font-variant-numeric:tabular-nums}
+.bath .d{font-size:13px;margin-top:4px;opacity:.9}
+
+.callout{border-radius:14px;background:var(--gold-soft);border-left:5px solid var(--gold);padding:12px 16px;margin-top:14px;font-size:14.5px}
+.callout strong{display:block;color:var(--gold);font-family:var(--num);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.callout b{font-weight:700}
+
+/* tables */
+.tbl{overflow-x:auto;border-radius:14px;background:var(--surface);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:460px}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-top:1px solid var(--line)}
+thead th{border-top:0;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;background:var(--move-bg)}
+td.num,th.num{text-align:right;font-family:var(--num);font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:700}
+tr.total td{font-weight:700;background:var(--gold-soft)}
+
+/* budget tiles */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.tile{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;min-width:0}
+.tile .k{font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.04em}
+.tile .v{font-family:var(--num);font-weight:700;font-size:20px;margin-top:2px;font-variant-numeric:tabular-nums;line-height:1.2}
+.tile .v small{font-size:12px;font-weight:500;color:var(--muted);font-family:var(--body)}
+@media (max-width:480px){.tiles{grid-template-columns:1fr 1fr}.tile:first-child{grid-column:1/-1}}
+
+/* budget */
+.sub-h{font-size:15px;font-weight:700;margin:22px 0 10px;color:var(--muted);letter-spacing:.02em}
+.dayb{margin-bottom:14px}
+.dayb-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:0 4px 8px}
+.dayb-h b{font-family:var(--num);font-size:15px}
+.dayb-h span{display:block;font-size:12.5px;color:var(--muted)}
+.dayb-t{font-family:var(--num);font-weight:700;font-size:18px;color:var(--gold);font-variant-numeric:tabular-nums;white-space:nowrap}
+table.bt{min-width:0}
+tr.opt td{color:var(--muted)}
+tr.opt td:first-child::after{content:"선택";margin-left:6px;font-size:10.5px;font-weight:700;color:var(--gold);border:1px solid var(--gold);border-radius:4px;padding:0 4px;vertical-align:1px}
+@media (max-width:560px){ table.bt td{display:block} table.bt td.num{position:absolute;right:14px;top:10px;padding:0} table.bt tr{position:relative;padding-right:90px} table.bt td:first-child{padding-right:0} table.bt td[data-label]:nth-child(2)::before{display:none} table.bt td:nth-child(2):empty{display:none} }
+/* day */
+.day{margin-top:32px;scroll-margin-top:72px}
+.dayhead{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;border-left:6px solid var(--dc,var(--gold));position:relative;overflow:hidden}
+.dayhead::after{content:"";position:absolute;right:-30px;top:-40px;width:120px;height:120px;border-radius:50%;background:var(--dc,var(--gold));opacity:.08;pointer-events:none}
+.dayhead .d{font-family:var(--num);font-weight:800;color:var(--dc,var(--indigo));font-size:13px;letter-spacing:.14em}
+.dayhead h3{margin:2px 0 0;font-family:var(--display);font-size:22px;font-weight:900;line-height:1.1}
+.dayhead .theme{color:var(--muted);font-size:14px;margin-top:4px}
+.budget{text-align:right;flex:0 0 auto}
+.budget span{display:block;font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.06em}
+.budget b{font-family:var(--num);font-size:17px;color:var(--dc,var(--gold));font-variant-numeric:tabular-nums}
+.budget a{color:inherit;text-decoration:none}
+.day.today .dayhead h3::after{content:"TODAY";margin-left:8px;font-family:var(--num);font-size:11px;letter-spacing:.1em;color:var(--on-indigo);background:var(--indigo);border-radius:6px;padding:2px 7px;vertical-align:middle}
+
+.tl{list-style:none;margin:0;padding:14px 0 0 0;position:relative}
+.tl::before{content:"";position:absolute;left:22px;top:14px;bottom:10px;width:2px;background:linear-gradient(var(--dc,var(--line)),var(--line));opacity:.6}
+.tl li{position:relative;display:grid;grid-template-columns:46px 1fr;gap:0 10px;margin-bottom:10px}
+.tl .ico{position:relative;z-index:1;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:21px;background:var(--surface);border:2px solid var(--line);box-shadow:var(--shadow)}
+.tl .card{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:11px 14px 12px;min-width:0;border-left:4px solid var(--line)}
+.tl .time{font-family:var(--num);font-weight:700;font-size:13px;color:var(--muted);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.tl .what{font-family:var(--display);font-weight:700;font-size:16.5px;line-height:1.4;margin-top:1px}
+.tl .note{color:var(--muted);font-size:14px;margin-top:4px;line-height:1.5}
+.tl .acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.go{display:inline-flex;align-items:center;gap:4px;min-height:32px;padding:0 12px;border-radius:999px;font-size:13px;font-weight:700;text-decoration:none;color:var(--indigo);background:var(--move-bg);white-space:nowrap}
+.go:hover,.go:focus-visible{background:var(--indigo);color:var(--on-indigo);outline:none}
+.tag{display:inline-block;border-radius:6px;padding:1px 7px;font-size:11.5px;font-weight:700;vertical-align:2px;margin-right:4px}
+/* type colors */
+li.food .ico{border-color:var(--food);background:var(--food-bg)} li.food .card{border-left-color:var(--food)} li.food .time{color:var(--food)} .t-food{background:var(--food-bg);color:var(--food)}
+li.shop .ico{border-color:var(--shop);background:var(--shop-bg)} li.shop .card{border-left-color:var(--shop)} li.shop .time{color:var(--shop)} .t-shop{background:var(--shop-bg);color:var(--shop)}
+li.move .ico{border-color:var(--move);background:var(--move-bg)} li.move .card{border-left-color:var(--move)} li.move .time{color:var(--move)} .t-move{background:var(--move-bg);color:var(--move)}
+li.sight .ico{border-color:var(--sight);background:var(--sight-bg)} li.sight .card{border-left-color:var(--sight)} li.sight .time{color:var(--sight)} .t-sight{background:var(--sight-bg);color:var(--sight)}
+li.stay .ico{border-color:var(--stay);background:var(--stay-bg)} li.stay .card{border-left-color:var(--stay)} li.stay .time{color:var(--stay)} .t-stay{background:var(--stay-bg);color:var(--stay)}
+li.onsen .ico{border-color:var(--onsen);background:var(--onsen)} li.onsen .card{border-left-color:var(--onsen);background:var(--onsen-bg)} li.onsen .time{color:var(--onsen)} li.onsen .note{color:var(--onsen)} .t-onsen{background:var(--onsen-bg);color:var(--onsen)}
+li.onsen .go{background:var(--surface)}
+li.onsen .card{position:relative;overflow:hidden}
+li.onsen .card::after{content:"♨";position:absolute;right:10px;top:-6px;font-size:52px;color:var(--onsen);opacity:.12;pointer-events:none}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:12px;font-size:12.5px;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px;background:var(--c)}
+
+ul.plain{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.plain li{background:var(--surface);border-radius:12px;box-shadow:var(--shadow);padding:10px 14px 10px 40px;position:relative;font-size:15px}
+ul.plain li::before{content:"";position:absolute;left:14px;top:13px;width:16px;height:16px;border-radius:5px;border:2px solid var(--indigo);opacity:.7}
+.src{font-size:12.5px;color:var(--muted);line-height:1.7;margin-top:40px;padding-top:16px;border-top:1px solid var(--line)}
+.src a{color:var(--muted)}
+
+@media (max-width:560px){
+  .tbl{border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+  table,tbody,tr,td{display:block;min-width:0;width:100%}
+  thead{display:none}
+  tr{background:var(--surface);border-radius:12px;box-shadow:var(--shadow);padding:10px 14px;margin-bottom:10px}
+  td{border:0;padding:3px 0;text-align:left!important;white-space:normal!important;font-weight:400}
+  td[data-label]::before{content:attr(data-label);display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;font-family:var(--num)}
+  td:first-child{font-weight:700;font-size:16px;padding-bottom:6px}
+  td:first-child::before{display:none}
+  td.num{font-family:var(--num);font-weight:700}
+  tr.total{background:var(--gold-soft)}
+  .hotel .top{padding:12px 14px}.hotel .body{padding:12px 14px 14px}
+}
+@media (prefers-reduced-motion:no-preference){.go{transition:background .15s,color .15s}}
+</style>
+</head>
+<body>
+
+
+
+
+<section class="hero">
+  <div class="gutter"><div class="wrap">
+    <div class="eyebrow">2026.11.30 MON – 12.03 THU · 3 NIGHTS</div>
+    <h1>나고야·이누야마<br>3박 4일</h1>
+    <p class="lede">쇼핑 → 온천 → 맛집 → 관광 순서로, 매일 온천 한 번 이상. 사카에 숙소에서 걸어 다니는 동선으로 짰어요.</p>
+    <div class="facts">
+      <div class="fact"><div class="k">가는 편</div><div class="v">11/30 09:10 → 10:55<small>제주항공 7C1201 · ICN T1 → NGO T2</small></div></div>
+      <div class="fact"><div class="k">오는 편</div><div class="v">12/3 18:30 → 20:55<small>NGO T1 → ICN T2 · 터미널 확인 필요</small></div></div>
+      <div class="fact"><div class="k">숙소</div><div class="v">크룸 나고야 2박<small>→ 인디고 이누야마 1박</small></div></div>
+      <div class="fact"><div class="k">결제 완료</div><div class="v">1,074,754원<small>항공 596,114 + 숙소 478,640</small></div></div>
+    </div>
+  </div></div>
+</section>
+
+<div class="gutter"><div class="wrap">
+
+<div class="overview">
+  <a class="ov" href="#day1" style="--dc:var(--d1)"><b>11/30 월</b><span>도착 · 사카에 쇼핑 · 야경</span><em class="o">♨ 크룸 저녁</em></a>
+  <a class="ov" href="#day2" style="--dc:var(--d2)"><b>12/1 화</b><span>픽업 · 나고야역 · 오스</span><em class="o">♨ 크룸 저녁</em></a>
+  <a class="ov" href="#day3" style="--dc:var(--d3)"><b>12/2 수</b><span>히츠마부시 · 이누야마</span><em class="o">♨ 아침 + 저녁</em></a>
+  <a class="ov" href="#day4" style="--dc:var(--d4)"><b>12/3 목</b><span>우라쿠엔 · 쇼핑 · 귀국</span><em class="o">♨ 인디고 아침</em></a>
+</div>
+
+<nav class="nav" aria-label="바로가기">
+  <a href="#day1">11/30</a><a href="#day2">12/1</a><a href="#day3">12/2</a><a href="#day4">12/3</a>
+  <a href="#stay">온천</a><a href="#move">교통</a><a href="#cost">경비</a><a href="#shop">쇼핑</a><a href="#todo">할 일</a>
+</nav>
+
+<h2 id="stay">숙소와 온천 시간</h2>
+<div class="grid2">
+  <div class="hotel">
+    <div class="top"><h3>니시테츠 호텔 크룸 나고야</h3><span class="n">11/30 – 12/2 · 2박</span></div>
+    <div class="body">
+      <dl class="kv">
+        <dt>위치</dt><dd>中区錦3-4-3 · 지하철 히사야오도리역 도보 1분, 사카에 도보권</dd>
+        <dt>체크인/아웃</dt><dd>15:00 / 11:00</dd>
+        <dt>결제</dt><dd>272,792원</dd>
+      </dl>
+      <div class="bath"><div class="t">♨ 최상층 대욕장 · 반노천 천연온천</div><div class="h">15:00 – 25:00 · 06:00 – 09:30</div><div class="d">투숙객 전용, 사우나 없음</div></div>
+    </div>
+  </div>
+  <div class="hotel">
+    <div class="top"><h3>호텔 인디고 이누야마 우라쿠엔 가든</h3><span class="n">12/2 – 12/3 · 1박</span></div>
+    <div class="body">
+      <dl class="kv">
+        <dt>위치</dt><dd>이누야마유엔역 도보 약 8분 · 이누야마성·우라쿠엔 바로 옆</dd>
+        <dt>체크인/아웃</dt><dd>15:00 / 11:00</dd>
+        <dt>결제</dt><dd>205,848원</dd>
+      </dl>
+      <div class="bath"><div class="t">♨ 천연온천 하쿠테이노유 · 노천탕 + 사우나</div><div class="h">15:00 – 23:00 · 06:00 – 11:00</div><div class="d">투숙객 무료</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="callout"><strong>미리 알아둘 것</strong>
+우라쿠엔은 <b>매주 수요일 휴원</b>이라 12/2엔 못 가고 12/3 아침 9:30에 갑니다 (성인 1,500엔, 투숙객 무료 여부는 호텔에 확인).
+아츠타 호라이켄 마츠자카야점은 <b>화요일 휴무</b>라 12/2(수) 점심으로 잡았어요.
+복귀편이 NGO <b>T1 출발</b>로 표시돼 있는데 제주항공은 보통 T2라서 항공사 확인 필요.</div>
+
+<h2 id="plan">일정</h2>
+<div class="legend">
+  <span style="--c:var(--move)">이동</span><span style="--c:var(--food)">맛집</span><span style="--c:var(--shop)">쇼핑</span><span style="--c:var(--sight)">관광</span><span style="--c:var(--stay)">숙소</span><span style="--c:var(--onsen)">온천</span>
+</div>
+
+<section class="day" id="day1" style="--dc:var(--d1)">
+  <div class="dayhead"><div><div class="d">DAY 1</div><h3>11/30 (월)</h3><div class="theme">도착 → 사카에 쇼핑 → 야경</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 8,400엔</a></b></div></div>
+  <ol class="tl">
+    <li class="move"><div class="ico">✈️</div><div class="card"><div class="time">10:55</div><div class="what">센트레아 T2 도착 → 입국</div><div class="note">T2에서 액세스플라자(T1 쪽 역)까지 도보 10–15분</div></div></li>
+    <li class="move"><div class="ico">🚆</div><div class="card"><div class="time">12:00 · 약 45분</div><div class="what">μ-SKY → 메이테츠 나고야 → 지하철 사카에 → 도보</div><div class="note">890 + μ티켓 450 + 지하철 210엔. 가나야마 환승 메이조선으로 히사야오도리 내려도 OK</div><div class="acts"><a class="go" data-from="中部国際空港駅" data-to="西鉄ホテル クルーム名古屋" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="stay"><div class="ico">🏨</div><div class="card"><div class="time">13:00</div><div class="what">크룸에 짐 맡기기</div><div class="acts"><a class="go" data-place="西鉄ホテル クルーム名古屋">지도 ↗</a></div></div></li>
+    <li class="food"><div class="ico">🍱</div><div class="card"><div class="time">13:15</div><div class="what">점심 · 라무치이 된장돈까스</div><div class="note">숙소 도보 15분, 15:00 마감. 대안: 히츠마부시 하나오카 (웨이팅 등록 필수)</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="らむちぃ 名古屋 錦" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="time">14:30 – 19:00</div><div class="what">사카에 쇼핑 한 바퀴 (전부 도보)</div><div class="note">HAERA (숙소 바로 옆, 올 6월 개장 럭셔리몰) → 미츠코시·마츠자카야 화장품 면세 (샤넬·맥·디올) → 라시크 → 파르코 (관광안내소에 리플릿 들고 가면 500엔 쿠폰, 하브스 밀크레이프) → 스카일 (유니클로·GU·다이소)</div><div class="acts"><a class="go" data-place="HAERA 名古屋栄">HAERA</a><a class="go" data-place="名古屋三越栄店">미츠코시</a><a class="go" data-place="松坂屋名古屋店">마츠자카야</a><a class="go" data-place="ラシック 名古屋">라시크</a><a class="go" data-place="名古屋PARCO">파르코</a><a class="go" data-place="スカイル 栄">스카일</a></div></div></li>
+    <li class="sight"><div class="ico">🌃</div><div class="card"><div class="time">19:00</div><div class="what">오아시스21 · 미라이타워 야경</div><div class="note">히사야오도리 공원, 숙소 도보 5분</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="オアシス21" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="food"><div class="ico">🍗</div><div class="card"><div class="time">19:30</div><div class="what">저녁 · 세카이노야마짱 초자마치점 (테바사키)</div><div class="note">대안: 츠키시마 몬자 오카케 사카에점 (명란모찌 몬자)</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="世界の山ちゃん 長者町店" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="shop"><div class="ico">🧴</div><div class="card"><div class="time">21:00</div><div class="what">돈키호테 사카에 → 숙소</div><div class="note">카톡에 보낸 돈키 쿠폰 링크 미리 캡처</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="ドン・キホーテ 栄本店" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">22:00</div><div class="what">크룸 대욕장</div><div class="note">25:00까지</div></div></li>
+  </ol>
+</section>
+
+<section class="day" id="day2" style="--dc:var(--d2)">
+  <div class="dayhead"><div><div class="d">DAY 2</div><h3>12/1 (화)</h3><div class="theme">픽업 → 나고야역 → 오스 빈티지 → 야키니쿠</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 11,000엔</a></b></div></div>
+  <ol class="tl">
+    <li class="food"><div class="ico">🍞</div><div class="card"><div class="time">08:30</div><div class="what">아침 · 킷사 나나반 모닝세트</div><div class="note">11시 전 필수. 픽업 시간 맞추려면 9:40엔 나와야 함. 대안: 킷사 마츠바 오구라토스트</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="킷사 나나반 나고야" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="stay"><div class="ico">📦</div><div class="card"><div class="time">10:00</div><div class="what">스시자로 픽업</div><div class="note">숙소 도보 5분. 정확한 가게 이름 알려주면 길찾기 링크 추가</div></div></li>
+    <li class="sight"><div class="ico">🏯</div><div class="card"><div class="time">10:45</div><div class="what">나고야성 · 메이조공원 (선택)</div><div class="note">메이조선 2정거장, 09:00–16:30, 500엔. 기념품점에 테바사키맛 자가비. 쇼핑 시간 모자라면 생략하고 바로 나고야역으로</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="名古屋城" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="time">13:00</div><div class="what">나고야역 쇼핑 + 점심</div><div class="note">JR 타카시마야 · 게이트타워몰 (젤라또 피케, 화장품) · 미들랜드스퀘어 · 빅카메라. 점심은 텐무스·키시멘 (케시키) 또는 이푸도도 탄탄멘</div><div class="acts"><a class="go" data-from="名古屋城" data-to="JR名古屋タカシマヤ" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="shop"><div class="ico">📷</div><div class="card"><div class="time">15:30</div><div class="what">오스 상점가 · 빈티지</div><div class="note">츠루마이선 오스칸논/가미마에즈. 코메효 본점 (빈티지 디카·아이폰·중고명품, 10:30–19:00) · 스투시 나고야 챕터 · 2nd STREET · 빈티지숍 · 길거리 간식</div><div class="acts"><a class="go" data-from="名古屋駅" data-to="コメ兵 名古屋本店" data-mode="transit">길찾기 ↗</a><a class="go" data-place="Stussy Nagoya Chapter">스투시</a></div></div></li>
+    <li class="food"><div class="ico">🥩</div><div class="card"><div class="time">18:30</div><div class="what">저녁 · 신라칸 야키니쿠 (우설)</div><div class="note">대안: 노라덴 미소오뎅 (구글 웨이팅 필수) · 마에사와 규샤 후시미야</div><div class="acts"><a class="go" data-from="大須観音駅" data-to="新羅館 名古屋" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">21:00</div><div class="what">크룸 대욕장</div><div class="acts"><a class="go" data-from="新羅館 名古屋" data-to="西鉄ホテル クルーム名古屋" data-mode="transit">숙소로 ↗</a></div></div></li>
+  </ol>
+</section>
+
+<section class="day" id="day3" style="--dc:var(--d3)">
+  <div class="dayhead"><div><div class="d">DAY 3</div><h3>12/2 (수)</h3><div class="theme">히츠마부시 → 이누야마 → 온천 두 번</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 13,400엔</a></b></div></div>
+  <ol class="tl">
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">06:30</div><div class="what">크룸 아침 대욕장 → 조식</div><div class="note">09:30까지</div></div></li>
+    <li class="stay"><div class="ico">🧳</div><div class="card"><div class="time">10:30</div><div class="what">체크아웃, 짐 맡기고 마츠자카야로</div></div></li>
+    <li class="food"><div class="ico">🍚</div><div class="card"><div class="time">11:00</div><div class="what">점심 · 아츠타 호라이켄 마츠자카야점 (히츠마부시 원조)</div><div class="note">오픈 전 줄서기. 수요일 영업, 11:00–14:30. 1인 약 4,000–5,000엔</div><div class="acts"><a class="go" data-from="西鉄ホテル クルーム名古屋" data-to="あつた蓬莱軒 松坂屋店" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="move"><div class="ico">🚆</div><div class="card"><div class="time">13:00 · 약 40분</div><div class="what">메이테츠 나고야 → 이누야마유엔 → 도보 8분</div><div class="note">특급 일반차 약 700엔, 추가요금 없음</div><div class="acts"><a class="go" data-from="名鉄名古屋駅" data-to="ホテルインディゴ犬山有楽苑" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="stay"><div class="ico">🏨</div><div class="card"><div class="time">13:45</div><div class="what">인디고에 짐 맡기기</div><div class="acts"><a class="go" data-place="ホテルインディゴ犬山有楽苑">지도 ↗</a></div></div></li>
+    <li class="sight"><div class="ico">🏯</div><div class="card"><div class="time">14:00</div><div class="what">이누야마성 → 성하마을 쇼와요코초</div><div class="note">성 입장 16:30까지, 1,000엔. 성하마을 상점은 17–18시면 닫히니 간식·기념품은 이때</div><div class="acts"><a class="go" data-from="ホテルインディゴ犬山有楽苑" data-to="犬山城" data-mode="walking">길찾기 ↗</a><a class="go" data-place="犬山城下町 昭和横丁">쇼와요코초</a></div></div></li>
+    <li class="stay"><div class="ico">🔑</div><div class="card"><div class="time">16:30</div><div class="what">체크인</div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">17:00</div><div class="what">하쿠테이노유 1회차</div></div></li>
+    <li class="food"><div class="ico">🍶</div><div class="card"><div class="time">18:30</div><div class="what">저녁 · 호텔 레스토랑 또는 이누야마역 근처 이자카야</div><div class="note">성하마을은 저녁에 거의 닫힘</div><div class="acts"><a class="go" data-place="犬山駅 居酒屋">이누야마역 주변</a></div></div></li>
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">21:30</div><div class="what">하쿠테이노유 2회차</div><div class="note">23:00까지</div></div></li>
+  </ol>
+</section>
+
+<section class="day" id="day4" style="--dc:var(--d4)">
+  <div class="dayhead"><div><div class="d">DAY 4</div><h3>12/3 (목)</h3><div class="theme">아침 온천 → 우라쿠엔 → 마지막 쇼핑 → 귀국</div></div><div class="budget"><span>1인 예산</span><b><a href="#cost">약 8,200엔</a></b></div></div>
+  <ol class="tl">
+    <li class="onsen"><div class="ico">♨️</div><div class="card"><div class="time">06:30</div><div class="what">하쿠테이노유 → 조식</div><div class="note">11:00까지</div></div></li>
+    <li class="sight"><div class="ico">🍵</div><div class="card"><div class="time">09:30</div><div class="what">우라쿠엔 산책 (국보 다실 조안)</div><div class="note">목요일 영업, 09:30–17:00</div><div class="acts"><a class="go" data-from="ホテルインディゴ犬山有楽苑" data-to="有楽苑" data-mode="walking">길찾기 ↗</a></div></div></li>
+    <li class="stay"><div class="ico">🧳</div><div class="card"><div class="time">11:00</div><div class="what">체크아웃</div></div></li>
+    <li class="shop"><div class="ico">🛍️</div><div class="card"><div class="time">11:20</div><div class="what">A안 · 나고야역에서 마지막 쇼핑</div><div class="note">이누야마유엔 → 메이테츠 나고야 (12:00) 코인로커 → 나고야역 쇼핑·점심. B안 (여유): 성하마을 점심 → 14:50 이누야마역에서 μ-SKY 직통 → 15:50 공항</div><div class="acts"><a class="go" data-from="犬山遊園駅" data-to="名鉄名古屋駅" data-mode="transit">A안 길찾기 ↗</a><a class="go" data-from="犬山駅" data-to="中部国際空港駅" data-mode="transit">B안 길찾기 ↗</a></div></div></li>
+    <li class="move"><div class="ico">🚆</div><div class="card"><div class="time">15:30 · 28분</div><div class="what">메이테츠 나고야 → μ-SKY → 센트레아</div><div class="note">890 + 450엔. 국제선이라 출발 2시간 전 도착</div><div class="acts"><a class="go" data-from="名鉄名古屋駅" data-to="中部国際空港駅" data-mode="transit">길찾기 ↗</a></div></div></li>
+    <li class="move"><div class="ico">✈️</div><div class="card"><div class="time">18:30</div><div class="what">출발 → 20:55 인천</div></div></li>
+  </ol>
+</section>
+
+<h2 id="move">교통 요금 (1인)</h2>
+<div class="tbl">
+<table>
+<thead><tr><th>구간</th><th>수단</th><th>시간</th><th class="num">요금</th></tr></thead>
+<tbody>
+<tr><td>센트레아 → 메이테츠 나고야</td><td>μ-SKY (전석 지정)</td><td>28분</td><td class="num">890 + 450엔</td></tr>
+<tr><td>센트레아 → 가나야마 → 히사야오도리</td><td>μ-SKY + 메이조선</td><td>약 40분</td><td class="num">830 + 450 + 210엔</td></tr>
+<tr><td>나고야 시내</td><td>지하철 1회 / 24시간권</td><td></td><td class="num">210 / 760엔</td></tr>
+<tr><td>메이테츠 나고야 → 이누야마유엔</td><td>이누야마선 특급 일반차</td><td>약 30분</td><td class="num">약 700엔</td></tr>
+<tr><td>이누야마 → 센트레아</td><td>μ-SKY 직통 (이누야마유엔은 미정차)</td><td>약 60분</td><td class="num">1,510 + 450엔</td></tr>
+<tr><td>이누야마유엔 → 센트레아</td><td>환승 없는 급행</td><td>약 1시간 13분</td><td class="num">1,510엔</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="cost">예상 경비</h2>
+<div class="tiles">
+  <div class="tile"><div class="k">이미 결제 · 항공 + 숙소 (2인)</div><div class="v">1,074,754원</div></div>
+  <div class="tile"><div class="k">현지 예상 · 1인</div><div class="v">약 47,000엔 <small>≈ 40만 원</small></div></div>
+  <div class="tile"><div class="k">현지 예상 · 2인</div><div class="v">약 94,000엔 <small>≈ 80만 원</small></div></div>
+</div>
+<p style="font-size:14px;color:var(--muted)">쇼핑 제외, 100엔 ≈ 850원. 1인당 총액은 결제분 537,377원 + 현지 약 40만 원 = <b>약 94만 원</b>. 아래 금액은 넉넉하게 잡은 추정치라 실제는 더 적게 나올 수 있어요.</p>
+
+<h3 class="sub-h">이미 결제한 것</h3>
+<div class="tbl"><table class="bt"><thead><tr><th>항목</th><th>내용</th><th class="num">원</th></tr></thead><tbody>
+<tr><td>항공</td><td>제주항공 왕복, 2인 (1인 298,057)</td><td class="num">596,114</td></tr>
+<tr><td>크룸 나고야</td><td>2박, 컴포트 더블 1실 (37% 멤버 할인 적용)</td><td class="num">272,792</td></tr>
+<tr><td>인디고 이누야마</td><td>1박 1실 (항공권 쿠폰 −21,866 적용)</td><td class="num">205,848</td></tr>
+<tr class="total"><td>합계</td><td>2인 · 1인당 537,377원</td><td class="num">1,074,754</td></tr>
+</tbody></table></div>
+
+<h3 class="sub-h">일별 현지 경비 (1인)</h3>
+<div class="dayb">
+<div class="dayb-h"><div><b>Day 1 · 11/30 (월)</b><span>도착 · 사카에</span></div><div class="dayb-t">8,350엔</div></div>
+<div class="tbl"><table class="bt"><thead><tr><th>항목</th><th>내용</th><th class="num">1인 (엔)</th></tr></thead><tbody>
+<tr><td>공항 → 숙소</td><td>μ-SKY 890 + μ티켓 450 + 지하철 210</td><td class="num">1,550</td></tr>
+<tr><td>점심 · 라무치이</td><td>된장돈까스 정식</td><td class="num">1,800</td></tr>
+<tr><td>카페 · 하브스</td><td>밀크레이프 + 음료</td><td class="num">1,500</td></tr>
+<tr><td>저녁 · 야마짱</td><td>테바사키 + 맥주 1잔</td><td class="num">3,000</td></tr>
+<tr><td>편의점·음료</td><td></td><td class="num">500</td></tr>
+<tr class="opt"><td>미라이타워 전망대</td><td>올라갈 때만</td><td class="num">1,300</td></tr>
+</tbody></table></div></div>
+
+<div class="dayb">
+<div class="dayb-h"><div><b>Day 2 · 12/1 (화)</b><span>나고야역 · 오스</span></div><div class="dayb-t">10,960엔</div></div>
+<div class="tbl"><table class="bt"><thead><tr><th>항목</th><th>내용</th><th class="num">1인 (엔)</th></tr></thead><tbody>
+<tr><td>지하철 24시간권</td><td>숙소 → 나고야성 → 나고야역 → 오스 → 숙소, 4회</td><td class="num">760</td></tr>
+<tr><td>아침 · 모닝세트</td><td>킷사 나나반</td><td class="num">900</td></tr>
+<tr class="opt"><td>나고야성</td><td>가면</td><td class="num">500</td></tr>
+<tr><td>점심 · 텐무스/키시멘</td><td>나고야역</td><td class="num">1,500</td></tr>
+<tr><td>오스 간식</td><td>길거리 음식·커피</td><td class="num">800</td></tr>
+<tr><td>저녁 · 신라칸</td><td>야키니쿠 우설 + 음료</td><td class="num">6,000</td></tr>
+<tr><td>편의점·음료</td><td></td><td class="num">500</td></tr>
+</tbody></table></div></div>
+
+<div class="dayb">
+<div class="dayb-h"><div><b>Day 3 · 12/2 (수)</b><span>히츠마부시 · 이누야마</span></div><div class="dayb-t">13,410엔</div></div>
+<div class="tbl"><table class="bt"><thead><tr><th>항목</th><th>내용</th><th class="num">1인 (엔)</th></tr></thead><tbody>
+<tr><td>점심 · 호라이켄</td><td>히츠마부시 (최근 가격 기준)</td><td class="num">5,000</td></tr>
+<tr><td>마츠자카야 → 메이테츠 나고야</td><td>지하철</td><td class="num">210</td></tr>
+<tr><td>메이테츠 나고야 → 이누야마유엔</td><td>특급 일반차</td><td class="num">700</td></tr>
+<tr><td>이누야마성</td><td>입장료 (2026.3 인상)</td><td class="num">1,000</td></tr>
+<tr><td>성하마을 간식</td><td>단고·고로케·고헤이모찌</td><td class="num">1,000</td></tr>
+<tr><td>저녁</td><td>이자카야 4,000 / 호텔 레스토랑 8,000+ 의 중간값</td><td class="num">5,000</td></tr>
+<tr><td>편의점·음료</td><td></td><td class="num">500</td></tr>
+</tbody></table></div></div>
+
+<div class="dayb">
+<div class="dayb-h"><div><b>Day 4 · 12/3 (목)</b><span>우라쿠엔 · 귀국</span></div><div class="dayb-t">7,740엔</div></div>
+<div class="tbl"><table class="bt"><thead><tr><th>항목</th><th>내용</th><th class="num">1인 (엔)</th></tr></thead><tbody>
+<tr><td>우라쿠엔</td><td>투숙객 무료면 0</td><td class="num">1,500</td></tr>
+<tr><td>이누야마유엔 → 메이테츠 나고야</td><td></td><td class="num">700</td></tr>
+<tr><td>코인로커</td><td>대형 1개를 둘이서, 1인 몫</td><td class="num">400</td></tr>
+<tr><td>점심 · 나고야역</td><td>키시멘·텐무스 등</td><td class="num">2,000</td></tr>
+<tr><td>카페·간식</td><td></td><td class="num">1,000</td></tr>
+<tr><td>메이테츠 나고야 → 센트레아</td><td>μ-SKY 890 + 450</td><td class="num">1,340</td></tr>
+<tr><td>공항 간식·음료</td><td></td><td class="num">800</td></tr>
+</tbody></table></div></div>
+
+
+<h3 class="sub-h">항목별 합계 (1인)</h3>
+<div class="tbl"><table><thead><tr><th>항목</th><th>내용</th><th class="num">엔</th><th class="num">원</th></tr></thead><tbody>
+<tr><td>교통</td><td>공항 왕복 2,890 · 지하철 970 · 이누야마 왕복 1,400 · 로커 400</td><td class="num">5,660</td><td class="num">48,000</td></tr>
+<tr><td>식비</td><td>아침 1회 · 점심 4회 · 저녁 3회 · 카페·간식</td><td class="num">29,000</td><td class="num">247,000</td></tr>
+<tr><td>입장료</td><td>이누야마성 1,000 · 우라쿠엔 1,500 · 나고야성 500 · 미라이타워 1,300</td><td class="num">4,300</td><td class="num">37,000</td></tr>
+<tr><td>편의점·음료</td><td>하루 500 × 4</td><td class="num">2,000</td><td class="num">17,000</td></tr>
+<tr><td>예비비</td><td>택시 한 번, 추가 간식, 웨이팅 중 카페 등 약 15%</td><td class="num">6,000</td><td class="num">51,000</td></tr>
+<tr class="total"><td>합계</td><td>1인 · 쇼핑 제외</td><td class="num">약 47,000</td><td class="num">약 400,000</td></tr>
+</tbody></table></div>
+<p style="font-size:13.5px;color:var(--muted);margin-top:10px">환전 팁: 식당·백화점은 카드가 대부분 되지만 킷사텐·성하마을 간식·코인로커는 현금이라 1인 2만 엔 정도는 현금으로.</p>
+
+<h2 id="shop">쇼핑 리스트 → 어디서</h2>
+<div class="tbl">
+<table>
+<thead><tr><th>품목</th><th>갈 곳</th></tr></thead>
+<tbody>
+<tr><td>미우미우 · 샤넬 · 디올 · 맥</td><td>HAERA, 미츠코시·마츠자카야 (사카에), JR 타카시마야 (나고야역)</td></tr>
+<tr><td>ZARA · COS · 아크테릭스 · 단톤 · 몽벨</td><td>사카에 (라시크·파르코 주변)와 나고야역에 분산. 출발 전 구글맵으로 매장 위치 확인</td></tr>
+<tr><td>스투시</td><td>스투시 나고야 챕터 (오스)</td></tr>
+<tr><td>젤라또 피케</td><td>파르코 또는 타카시마야 게이트타워몰</td></tr>
+<tr><td>빈티지 디카 · 아이폰</td><td>코메효 본점 (오스), 오스 빈티지숍·2nd STREET, 빅카메라 (나고야역)</td></tr>
+<tr><td>유니클로 · GU · 다이소</td><td>스카일 (사카에)</td></tr>
+<tr><td>돈키호테</td><td>사카에점 (숙소 근처), 쿠폰 링크 캡처</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="todo">출발 전 할 일</h2>
+<ul class="plain">
+  <li>노라덴·하나오카: 구글 웨이팅 방식 확인, 당일 아침에 등록</li>
+  <li>라무치이·나나반·마츠바·신라칸 요일별 휴무 확인 (12/1 화요일 휴무 식당 많음)</li>
+  <li>인디고에 우라쿠엔 투숙객 무료 입장 여부 문의</li>
+  <li>복귀편 터미널 (T1/T2) 항공사에 확인</li>
+  <li>파르코 500엔 쿠폰: 센트레아 또는 사카에 관광안내소에서 리플릿 수령</li>
+  <li>지하철 24시간권은 하루 3번 이상 탈 때만 이득 (760엔)</li>
+</ul>
+
+<p class="src">출처: <a href="https://www.ikyu.com/biz/00081626/">크룸 대욕장 시간 (一休)</a> · <a href="https://hotel.travel.rakuten.co.jp/PLAN/183344/6445893">인디고 온천 시간 (라쿠텐)</a> · <a href="https://www.meitetsu.co.jp/urakuen/info/index.html">우라쿠엔 이용안내</a> · <a href="https://www.nagoya-info.jp/access/centrair/">센트레아 접근 (나고야 관광 공식)</a> · <a href="https://ekitan.com/transit/fare/sf-3876/st-9459">이누야마유엔→센트레아 요금 (駅探)</a> · <a href="https://r.gnavi.co.jp/n010000/">호라이켄 마츠자카야점</a> · <a href="https://www.walkerplus.com/spot/ar0623s05538/data.html">이누야마성 요금</a> · <a href="https://www.fashionsnap.com/article/2026-03-17/haera/">HAERA 개장</a>. 요금·시간은 2026.11.13 조사 기준, 출발 전 재확인.</p>
+
+</div></div>
+
+<script>
+(function(){
+  // Google Maps links
+  var dir='https://www.google.com/maps/dir/?', srch='https://www.google.com/maps/search/?';
+  document.querySelectorAll('a.go').forEach(function(a){
+    var d=a.dataset, p=new URLSearchParams({api:'1'});
+    if(d.place){ p.set('query',d.place); a.href=srch+p; }
+    else { p.set('destination',d.to); p.set('travelmode',d.mode||'transit'); if(d.from) p.set('origin',d.from); a.href=dir+p; }
+    a.target='_blank'; a.rel='noopener';
+  });
+  // table headers -> data-label for stacked mobile layout
+  document.querySelectorAll('table').forEach(function(t){
+    var hs=[].map.call(t.querySelectorAll('thead th'),function(h){return h.textContent.trim()});
+    t.querySelectorAll('tbody tr').forEach(function(r){ [].forEach.call(r.children,function(c,i){ if(hs[i]) c.setAttribute('data-label',hs[i]); }); });
+  });
+  // jump helper: heading lands right under the sticky bar
+  var nav=document.querySelector('.nav');
+  function jump(t){ t.style.scrollMarginTop=(nav.offsetHeight+10)+'px'; t.scrollIntoView({block:'start',inline:'nearest'});
+    setTimeout(function(){ t.scrollIntoView({block:'start',inline:'nearest'}); lock=false; },250); try{ history.replaceState(null,'','#'+t.id); }catch(err){} }
+  // today marker
+  var days={'2026-11-30':'day1','2026-12-01':'day2','2026-12-02':'day3','2026-12-03':'day4'};
+  var d=new Date(), key=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  var id=days[key];
+  if(id){ var el=document.getElementById(id); if(el){ el.classList.add('today'); if(!location.hash){ setTimeout(function(){ jump(el); },80); } } }
+  // nav + overview links
+  var links=[].slice.call(nav.querySelectorAll('a')), targets=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
+  var lock=false, ticking=false;
+  function setOn(i){ links.forEach(function(l,k){ l.classList.toggle('on',k===i); }); var a=links[i]; if(a){ nav.scrollLeft=Math.max(0,a.offsetLeft-(nav.clientWidth-a.offsetWidth)/2); } }
+  links.forEach(function(a,i){ a.addEventListener('click',function(e){ e.preventDefault(); if(!targets[i]) return; lock=true; setOn(i); jump(targets[i]); }); });
+  document.querySelectorAll('.ov').forEach(function(a){ a.addEventListener('click',function(e){ var t=document.getElementById(a.getAttribute('href').slice(1)); if(t){ e.preventDefault(); lock=true; jump(t); } }); });
+  function update(){ ticking=false; if(lock) return; var line=nav.offsetHeight+16, cur=-1;
+    targets.forEach(function(t,i){ if(t && t.getBoundingClientRect().top<=line) cur=i; }); if(cur>=0) setOn(cur); }
+  window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(update); } },{passive:true});
+  update();
+})();
+</script>
+
+</body>
+</html>
